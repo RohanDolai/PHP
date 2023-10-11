@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div id="loginform">
+            <h3>Login Form</h3>
+            <form action="login.php" method="post">
+                <label>Name :</label><br>
+                <input type="text" name="name" required><br>
+                <label>Password :</label><br>
+                <input type="password" name="password" required><br><br>
+                <input type="submit" action="submit"><br><br>
+            </form>
+            </div>
+            <div id="registrationform">
+                <h3>Registration form</h3>
+                <form action="registration.php" method="post">
+                    <label>Name :</label><br>
+                    <input type="text" name="name" required><br>
+                    <label>Email :</label><br>
+                    <input type="email" name="email" required><br>
+                    <label>Password :</label><br>
+                    <input type="password" name="password" required><br><br>
+                    <input type="submit" action="submit"><br><br>
+                </form>
+            </div>
+                <div class="button">
+                    <button onclick="showlogin()">Login</button>
+                    <button onclick="showregistration()">Registration</button>
+                </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
